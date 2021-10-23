@@ -1,0 +1,71 @@
+/*===== FEATURED =====*/
+.featured {
+	&__container {
+		row-gap: 2rem;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	}
+}
+
+.sneaker {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	background-color: var(--dark-color-lighten);
+	border-radius: .5rem;
+	transition: .3s;
+
+	&__sale {
+		position: absolute;
+		left: 0.5rem;
+		background-color: var(--dark-color);
+		color: var(--white-color);
+		padding: 0.25rem 0.5rem;
+		border-radius: .25rem;
+		font-size: var(--h2-font-size);
+		transform: rotate(-90deg);
+		letter-spacing: 0.1rem;
+	}
+
+	&__img {
+		width: 220px;
+		margin-top: var(--mb-3);
+		margin-bottom: var(--mb-6);
+		transform: var(--rotate-img);
+		filter: drop-shadow(0 12px 8px rgba(0, 0, 0, .2));
+	}
+
+	&__name,
+	&__price {
+		font-size: var(--h2-font-size);
+		letter-spacing: 0.1rem;
+		font-weight: var(--font-bold);
+	}
+
+	&__name {
+		margin-bottom: var(--mb-1);
+	}
+
+	&__price {
+		margin-bottom: var(--mb-4);
+	}
+
+	&:hover {
+		transform: translateY(-.5rem);
+	}
+
+	&__pages {
+		margin-top: var(--mb-6);
+	}
+	
+	&__page {
+		padding: 0.5rem 1rem;
+		border: 1px solid var(--dark-color);
+	}
+
+	&__page:hover {
+		background-color: var(--dark-color);
+		color: var(--white-color);
+	}
+}

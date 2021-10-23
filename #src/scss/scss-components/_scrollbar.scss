@@ -1,0 +1,15 @@
+::-webkit-scrollbar {
+	width: 0.6rem;
+	border-radius: 0.5rem;
+	background-color: var(--dark-color-lighten);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--dark-color-light);
+	transition: .3s;
+
+	&:hover {
+		background-color: #666;
+		transition: .3s;
+	}
+}

@@ -1,0 +1,41 @@
+/*===== NEWSLETTER =====*/
+.newsletter {
+	&__container {
+		background-color: var(--dark-color);
+		color: var(--white-color);
+		padding: 2rem 0.5rem;
+		border-radius: 0.5rem;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: var(--bigger-font-size);
+		margin-bottom: var(--mb-2);
+	}
+
+	&__description {
+		margin-bottom: var(--mb-5);
+	}
+
+	&__subscribe {
+		display: flex;
+		column-gap: 0.5rem;
+		background-color: var(--white-color);
+		padding: 0.5rem;
+		border-radius: .5rem	;
+	}
+
+	&__input {
+		outline: none;
+		border: none;
+		width: 90%;
+		font-size: var(--normal-font-size);
+	}
+
+	&__input::placeholder {
+		color: var(--dark-color);
+		font-family: var(--body-font);
+		font-size: var(--normal-font-size);
+		font-weight: var(--font-semi-bold);
+	}
+}

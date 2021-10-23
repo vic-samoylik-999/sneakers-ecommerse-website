@@ -1,0 +1,27 @@
+/*===== OFFER =====*/
+.offer {
+	&__container {
+		grid-template-columns: 55% 45%;
+		column-gap: 0;
+		background-color: var(--dark-color-lighten);
+		border-radius: 0.5rem;
+		justify-content: center;
+	}
+
+	&__data {
+		padding: 4rem 0 4rem 1.5rem;
+	}
+
+	&__title {
+		font-size: var(--biggest-font-size);
+		margin-bottom: 0.25rem;
+	}
+
+	&__description {
+		margin-bottom: var(--mb-3);
+	}
+
+	&__img {
+		width: 153px;
+	}
+}
